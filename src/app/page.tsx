@@ -305,7 +305,7 @@ function BuyNow() {
 
           {/* Instagram Card */}
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/grannys_pot_flavor_unmatched"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-2xl p-8 transition-all border border-white/10 hover:border-[#c0392b]/50"
@@ -385,7 +385,7 @@ function Footer() {
               <AmazonIcon />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/grannys_pot_flavor_unmatched"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888] transition-colors"
