@@ -86,16 +86,17 @@ function Hero() {
           className="object-cover object-center"
         />
       </div>
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(22,10,4,0.68)_0%,rgba(22,10,4,0.5)_38%,rgba(22,10,4,0.2)_62%,rgba(22,10,4,0.06)_100%)]" />
       <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
         <div className="space-y-6 relative z-10 max-w-2xl p-6 md:p-8">
           <span className="inline-block bg-[#b9412e] text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
             Desi Handmade Legacy
           </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#fff4df]">
-            <span className="text-[#c85a18]">Granny&apos;s Pot</span> ka
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#fff4df] [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]">
+            <span className="text-[#df6f1f]">Granny&apos;s Pot</span> ka
             Asli Swad, Har Ghar ke Liye
           </h1>
-          <p className="text-lg text-[#ffe8cc] max-w-xl leading-relaxed">
+          <p className="text-lg text-[#fff0dc] max-w-xl leading-relaxed [text-shadow:0_2px_10px_rgba(0,0,0,0.6)]">
             👵 Handcrafted with tradition | 100% Homemade Goodness
             <br />✨ A rich, authentic taste inspired by timeless recipes.
           </p>
@@ -114,7 +115,7 @@ function Hero() {
               Explore Pickles
             </a>
           </div>
-          <p className="text-sm text-[#ffe8cc] font-semibold">
+          <p className="text-sm text-[#fff0dc] font-semibold [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">
             ❄️ Limited Batches | Fresh & Seasonal &nbsp;&nbsp; 🔥 No
             Preservatives | Pure Homemade Goodness
           </p>
