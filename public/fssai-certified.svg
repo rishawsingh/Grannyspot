@@ -1,0 +1,7 @@
+<svg width="240" height="72" viewBox="0 0 240 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="236" height="68" rx="12" fill="#FFF6E8" stroke="#CE7A1B" stroke-width="3"/>
+  <circle cx="36" cy="36" r="20" fill="#2F6F3E"/>
+  <path d="M28 36L34 42L45 30" stroke="#FFF6E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="30" fill="#2F1608" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="16" font-weight="700">FSSAI CERTIFIED</text>
+  <text x="66" y="48" fill="#B9412E" font-family="Trebuchet MS, Segoe UI, sans-serif" font-size="12" font-weight="700">Safe, Compliant &amp; Trusted</text>
+</svg>
