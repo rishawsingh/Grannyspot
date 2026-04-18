@@ -1,46 +1,6 @@
 import Image from "next/image";
-
-/* ──────────────────────────────────
-   Pickle product data
-   ────────────────────────────────── */
-const pickles = [
-  {
-    name: "Classic Mango Pickle",
-    description:
-      "Sun-ripened raw mangoes with a fiery blend of mustard, fenugreek and red chilli. A timeless family favourite.",
-    tag: "Bestseller",
-  },
-  {
-    name: "Tangy Lemon Pickle",
-    description:
-      "Zesty lemons slow-cured with turmeric and asafoetida. Perfect alongside dal-rice or parathas.",
-    tag: "Popular",
-  },
-  {
-    name: "Spicy Mixed Vegetable Pickle",
-    description:
-      "A medley of carrots, cauliflower, green chillies and raw mango tossed in aromatic spices.",
-    tag: "New",
-  },
-  {
-    name: "Garlic Pickle",
-    description:
-      "Whole garlic cloves marinated in mustard oil and a secret spice mix. Bold, pungent and addictive.",
-    tag: "Hot",
-  },
-  {
-    name: "Green Chilli Pickle",
-    description:
-      "Crisp green chillies stuffed with a tangy spice paste. For those who love it extra hot!",
-    tag: "Spicy",
-  },
-  {
-    name: "Amla (Gooseberry) Pickle",
-    description:
-      "Indian gooseberries brined with mustard and fennel. A delicious way to get your daily dose of Vitamin C.",
-    tag: "Healthy",
-  },
-];
+import Link from "next/link";
+import { pickles } from "@/data/pickles";
 
 /* ──────────────────────────────────
    Navbar
@@ -103,55 +63,68 @@ function Navbar() {
    ────────────────────────────────── */
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#fdebd0] via-[#fffaf5] to-[#eafaf1]">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 py-20 md:py-32">
-        <div className="space-y-6">
-          <span className="inline-block bg-[#c0392b] text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
-            Homemade with Love
+    <section className="relative overflow-hidden bg-[#f8e2bf] min-h-[620px] md:min-h-[700px]">
+      <div className="absolute inset-0 md:hidden">
+        <Image
+          src="/hero-authentic-bg-v8.jpg"
+          alt="Granny's Pot hero background with authentic pickle jar"
+          fill
+          priority
+          quality={100}
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="absolute inset-0 hidden md:block">
+        <Image
+          src="/hero-authentic-bg-v7.jpg"
+          alt="Granny's Pot hero background with authentic pickle jar"
+          fill
+          priority
+          quality={100}
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
+        <div className="space-y-6 relative z-10 max-w-2xl p-6 md:p-8">
+          <span className="inline-block bg-[#b9412e] text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+            Desi Handmade Legacy
           </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#2d1810]">
-            Taste the Tradition of{" "}
-            <span className="text-[#c0392b]">Granny&apos;s Pot</span>
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#fff4df]">
+            <span className="text-[#c85a18]">Granny&apos;s Pot</span> ka
+            Asli Swad, Har Ghar ke Liye
           </h1>
-          <p className="text-lg text-[#5a3825] max-w-lg leading-relaxed">
-            Authentic handcrafted pickles made from the finest ingredients and
-            age-old family recipes. Every jar is packed with love, spice and
-            everything nice.
+          <p className="text-lg text-[#ffe8cc] max-w-xl leading-relaxed">
+            👵 Handcrafted with tradition | 100% Homemade Goodness
+            <br />✨ A rich, authentic taste inspired by timeless recipes.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
               href="#buy"
-              className="inline-flex items-center gap-2 bg-[#c0392b] hover:bg-[#a93226] text-white font-semibold px-6 py-3 rounded-full transition-colors"
+              className="inline-flex items-center gap-2 bg-[#b9412e] hover:bg-[#9e3626] text-white font-semibold px-6 py-3 rounded-full transition-colors"
             >
               <CartIcon />
               Shop Now
             </a>
             <a
               href="#products"
-              className="inline-flex items-center gap-2 border-2 border-[#c0392b] text-[#c0392b] hover:bg-[#c0392b] hover:text-white font-semibold px-6 py-3 rounded-full transition-colors"
+              className="inline-flex items-center gap-2 border-2 border-[#ffd3a1] text-[#fff4df] hover:bg-[#ffd3a1] hover:text-[#2f1608] font-semibold px-6 py-3 rounded-full transition-colors"
             >
               Explore Pickles
             </a>
           </div>
-        </div>
-        <div className="relative flex justify-center">
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-[#f39c12]/40 shadow-2xl">
-            <Image
-              src="/photo1.jpeg"
-              alt="Delicious homemade pickle from Granny's Pot"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          <div className="absolute -bottom-4 -right-4 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
-            <Image
-              src="/photo2.jpeg"
-              alt="Pickle variety"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <p className="text-sm text-[#ffe8cc] font-semibold">
+            ❄️ Limited Batches | Fresh & Seasonal &nbsp;&nbsp; 🔥 No
+            Preservatives | Pure Homemade Goodness
+          </p>
+          <Image
+            src="https://fssai.gov.in/upload/knowledge_hub/1117705b4339fa3e722FSSAI-logo-min+line.png"
+            alt="FSSAI certified"
+            width={220}
+            height={66}
+            className="rounded-lg shadow-sm bg-white/90 p-1"
+          />
         </div>
       </div>
     </section>
@@ -240,24 +213,25 @@ function Products() {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {pickles.map((p) => (
-            <div
-              key={p.name}
+          {pickles.map((pickle) => (
+            <Link
+              key={pickle.slug}
+              href={`/pickles/${pickle.slug}`}
               className="group bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg border border-[#f39c12]/10 hover:border-[#f39c12]/30 transition-all"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="text-3xl">🫙</span>
                 <span className="text-[10px] uppercase font-bold tracking-widest bg-[#fdebd0] text-[#c0392b] px-2 py-0.5 rounded-full">
-                  {p.tag}
+                  {pickle.tag}
                 </span>
               </div>
               <h3 className="text-lg font-bold text-[#2d1810] mb-2 group-hover:text-[#c0392b] transition-colors">
-                {p.name}
+                {pickle.name}
               </h3>
               <p className="text-sm text-[#5a3825] leading-relaxed">
-                {p.description}
+                {pickle.shortDescription}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
