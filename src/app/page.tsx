@@ -372,10 +372,10 @@ function Footer() {
           <p className="text-sm">
             Email:{" "}
             <a
-              href="mailto:hello@grannyspot.com"
+              href="mailto:reach-us@grannyspot.com"
               className="hover:text-[#f39c12] transition-colors"
             >
-              hello@grannyspot.com
+              reach-us@grannyspot.com
             </a>
           </p>
         </div>
